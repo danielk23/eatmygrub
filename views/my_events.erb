@@ -1,0 +1,32 @@
+<h2>my events</h2>
+
+
+<div class="event-section">
+
+<a href="/my_event/new">create your event</a>
+
+    <% @events.each do | event |%>
+        <div class="event-container">
+            <div class="event-info-container">
+                <img src="<%= event.image_url %>">
+                <p><%= event.date_event %></p>
+                <p><%= event.time_event %></p>
+                <p><%= event.location_event %></p>
+                <p><%= event.nbr_guest %></p>
+                <p><%= event.menu_description %></p>
+                <p><%= event.price %></p>
+            </div>
+            <div class="btn-container">
+            <a href="/my_event/<%= event.id %>/edit">edit your event</a>
+            </div>
+        </div>
+    <% end %>
+</div class="event-section">
+
+
+
+
+
+
+
+

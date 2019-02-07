@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eat My Grub</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
+</head>
+<body>
+  <header>
+    <div class="logo_symbol">
+    
+    </div>
+
+  <nav>
+    <a href="/">home</a>
+    <a href="/events">all events</a>
+    <a href="/my_events">my events</a>
+    <a href="/my_reserved_events">my rsvp</a>
+  </nav>    
+  </header>
+
+
+  <% if logged_in? %> <!-- if logged in -->
+   <%= current_user.username %> you soon 'grubbing'
+      <form action="/session" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <button>logout</button>
+    </form>
+  <% else %> <!-- if logged in -->
+
+  <% end %>
+
+
+<%# GOOGLE STICK FOOTER SOLUTION / FLEX BOX %>
+  <footer>
+  <p>&copy 2019 - Eat my grub</p> 
+  </footer>
+
+  <%= yield %>
+
+</body>
+</html>

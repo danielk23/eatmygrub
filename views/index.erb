@@ -1,0 +1,29 @@
+  <header>
+    <div class="logo_symbol">
+    
+    </div>
+
+  <nav>
+    <% if !logged_in? %>
+      <a href="/sign_up">sign up</a>
+      <a href="/login">login</a>
+    <% else %>
+      <%= current_user.username %> you soon 'grubbing'
+        <form action="/session" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button>logout</button>
+      </form>
+    <% end %>
+  </nav>    
+  </header>
+  <h1>Eat my Grub</h1>
+  <body>
+    <div class="search-container">
+      <form class="form" action="/search">
+          <input class="search-input" name="search_query" type="text" placeholder="Find some good grub...">
+          <button class="btn-search">search</button>
+      </form>
+    </div>
+  </body>
+
+

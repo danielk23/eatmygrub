@@ -1,0 +1,46 @@
+<h2>my new event - create</h2>
+
+<form action="/my_event/new" method="post">
+
+<label for="">image(grub preview)</label>
+<input name="image_url" type="text">
+
+<label for="">date</label>
+<input name="date_event" type="text">
+
+<label for="">start time</label>
+<input name="time_event" type="text">
+
+<label for="">address</label>
+<input name="location_event" type="text">
+
+<label for="">max number of guests</label>
+<input name="nbr_guest" type="text">
+
+<label for="">type of cuisine</label>
+<select name="food_category">
+    <option value="Asian-tastic">Asian-tastic</option>
+    <option value="Fancy 5 stars">Fancy 5 stars</option>
+    <option value="Meat meat meat">Meat meat meat</option>
+    <option value="Mum's receipe">Mum's receipe</option>
+    <option value="Seafood">Seafood</option>
+    <option value="Suprise Suprisssse">Suprise Suprisssse</option>
+    <option value="Veggie Greenie">Veggie Greenie</option>   
+    <option value="others">others</option>
+</select>
+
+<label for="">your full menu</label>
+<textarea name="menu_description"></textarea>
+
+<label for="">how much you want for you grub per person</label>
+<select name="price">
+    <option value="$80 incl. 1 drink">$80 incl. 1 drink</option>
+    <option value="$40 incl. 1 drink">$40 incl. 1 drink</option>
+    <option value="$20 bring your drinks">$20 bring your drinks</option>
+    <option value="Pay what you think its worth">Pay what you think its worth</option>
+    <option value="FREE - just bring drinks">FREE - just bring drinks</option>
+</select>
+
+<button>create</button>
+
+</form>

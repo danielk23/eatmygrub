@@ -1,0 +1,16 @@
+<h2>my reserve events</h2>
+
+<% @events.each do | event | %>
+    <div class="event-container">
+        <div class="event-info-container">
+            <img src="<%= event.image_url %>">
+            <p><%= event.date_event %></p>
+            <p><%= event.time_event %></p>
+            <p><%= event.location_event %></p>
+            <p><%= event.nbr_guest %></p>
+            <p><%= event.food_category %></p>
+            <p><%= event.price %></p>
+        </div>
+    </div>
+
+<% end %>

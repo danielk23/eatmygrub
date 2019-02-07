@@ -1,0 +1,25 @@
+<h2>my event details</h2>
+
+
+
+
+
+
+<div class="detail-event-container">
+    <img src="<%= @event.image_url %>"/>
+    <p><%= @event.date_event %></p>
+    <p><%= @event.time_event %></p>
+    <p><%= @event.location_event %></p>
+    <p><%= @event.nbr_guest %></p>
+    <p><%= @event.food_category %></p>
+    <p><%= @event.menu_description %></p>
+    <p><%= @event.price %></p>
+    <p><%= @event.user_id %></p>
+</div>
+
+<a href="/my_events">confirm</a>
+<a href="/my_event/<%= @event.id %>/edit">edit your event</a>
+<form action="/my_event/<%= @event.id %>/detail" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button>Delete</button>
+</form>

@@ -1,0 +1,28 @@
+<h2>all events</h2>
+
+
+<div class="event-section">
+
+<a href="/my_event/new">Start creating your event</a>
+
+    <% @events.each do | event |%>
+        <div class="event-container">
+            <div class="event-info-container">
+                <img src="<%= event.image_url %>">
+                <p><%= event.date_event %></p>
+                <p><%= event.time_event %></p>
+                <p><%= event.location_event %></p>
+                <p><%= event.nbr_guest %></p>
+                <p><%= event.food_category %></p>
+                <p><%= event.price %></p>
+            </div>
+            <div class="btn-container">
+            
+            <form action="my_event/<%= event.id %>/reserve" method="post">
+ 
+                <button>Reserve - RSVP</button>
+            </form>
+            </div>
+        </div>
+    <% end %>
+</div class="event-section">
