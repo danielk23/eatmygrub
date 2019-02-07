@@ -1,7 +1,7 @@
 ### TOOLS / SOFTWARE USED ###    
 require 'sinatra'
-require 'sinatra/reloader'
-require 'pry'
+# require 'sinatra/reloader'
+# require 'pry'
 require 'pg'
 require 'active_record'
 

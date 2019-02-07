@@ -5,7 +5,7 @@ require_relative 'models/event'
 require_relative 'models/user'
 
 
-binding.pry
+# binding.pry
 
 
 # ar_client is for testing that my Class is working and that its linked to my table database

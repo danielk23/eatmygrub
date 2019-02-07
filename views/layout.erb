@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Eat My Grub</title>
-  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/reset.css'>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 </head>
 <body>
+  <div class="wrapper-all-pages">
   <header>
+
     <div class="logo_symbol">
     
     </div>
 
-  <nav>
-    <a href="/">home</a>
-    <a href="/events">all events</a>
-    <a href="/my_events">my events</a>
-    <a href="/my_reserved_events">my rsvp</a>
-  </nav>    
+    <nav>
+      <a href="/">home</a>
+      <a href="/events">all events</a>
+      <a href="/my_events">my events</a>
+      <a href="/my_reserved_events">my rsvp</a>
+    </nav>    
   </header>
 
 
@@ -31,12 +35,14 @@
   <% end %>
 
 
-<%# GOOGLE STICK FOOTER SOLUTION / FLEX BOX %>
+</div>
+  
+
+  <%= yield %>
+
   <footer>
   <p>&copy 2019 - Eat my grub</p> 
   </footer>
-
-  <%= yield %>
 
 </body>
 </html>

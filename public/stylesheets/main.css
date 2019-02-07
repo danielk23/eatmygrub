@@ -1,3 +1,125 @@
+/*** GENERAL GLOBAL SET UP ***/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgb(72,72,72);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+/* header {
+    flex: 0 0 auto;
+} */
+
+
+/*** HOMEPAGE ***/
+
+.body-homepage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-image: url("/img/photo-homepage.jpg");
+}
+
+.header-homepage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,
+.nav-homepage,
+.welcome-intro-copy {
+    color: rgba(218, 218, 218, 0.9);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 40px 0 0 70px;
+}
+
+.welcome-intro-copy {
+    margin: 20px 0 0 70px;
+    max-width: 400px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.symbol {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.nav-homepage {
+    margin: 20px;
+}
+
+.btn-homepage {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search-container {
+    display: flex;
+    margin: 30px 0 0 70px;
+}
+
+.search-input {
+    width: 400px;
+}
+
+.btn-search {
+    margin-left: 5px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    color: rgba(243, 243, 243, 0.9);
+}
+
 .event-container {
-    border: 1px solid black;
+border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+margin: auto auto 10px 15px;
+}
+
+.footer-homepage {
+    font-size: 12px;
+    color: rgba(218, 218, 218, 0.7)
 }

@@ -1,29 +1,51 @@
-  <header>
-    <div class="logo_symbol">
-    
-    </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eat My Grub</title>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/reset.css'>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+</head>
+<body class="body-homepage">
+  <div class="wrapper">
+    <header class="header-homepage">
 
-  <nav>
-    <% if !logged_in? %>
-      <a href="/sign_up">sign up</a>
-      <a href="/login">login</a>
-    <% else %>
-      <%= current_user.username %> you soon 'grubbing'
-        <form action="/session" method="post">
-        <input type="hidden" name="_method" value="delete">
-        <button>logout</button>
-      </form>
-    <% end %>
-  </nav>    
-  </header>
-  <h1>Eat my Grub</h1>
-  <body>
-    <div class="search-container">
-      <form class="form" action="/search">
-          <input class="search-input" name="search_query" type="text" placeholder="Find some good grub...">
-          <button class="btn-search">search</button>
-      </form>
-    </div>
-  </body>
+      
+      <img class="symbol" src="/img/symbol_hp.svg" alt="eat-my-grub-logo-symbol" href="/">
+     
+
+      <nav class="nav-homepage">
+        <% if !logged_in? %>
+          <a class="btn-homepage" href="/sign_up">sign up</a>
+          <a class="btn-homepage" href="/login">login</a>
+        <% else %>
+          <%= current_user.username %> you soon 'grubbing'
+            <form action="/session" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <button>logout</button>
+          </form>
+        <% end %>
+      </nav>    
+    </header>
+    <main>
+      <h1>Eat my Grub</h1>
+
+      <p class="welcome-intro-copy">Welcome to "Eat my Grub". Share your grub, create your event - instant resto, meet people. Do it for free or a bit moolah. Start and Sign up now. </p>
+      
+      <div class="search-container">
+        <form class="search-field" action="/search">
+            <input class="search-input" name="search_query" type="text" placeholder="Find some good grub...near you i.e melbourne">
+            <button class="btn-search">search</button>
+        </form>
+      </div>
+    </main>
+
+      <footer>
+      <p class="footer-homepage">&copy 2019 - Eat my grub</p> 
+    </footer>
+  </div>
+</body>
+</html>
 
 

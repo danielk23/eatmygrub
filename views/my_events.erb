@@ -18,6 +18,10 @@
             </div>
             <div class="btn-container">
             <a href="/my_event/<%= event.id %>/edit">edit your event</a>
+            <form action="/my_event/<%= event.id %>/detail" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <button>Delete</button>
+            </form>
             </div>
         </div>
     <% end %>
