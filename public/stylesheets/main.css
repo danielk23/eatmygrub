@@ -68,6 +68,10 @@ h1 {
     margin-right: 5px;
 }
 
+.btn-homepage:hover {
+    color: rgba(218, 218, 218, 0.9);
+}
+
 .search-container {
     display: flex;
     margin: 30px 0 0 70px;
@@ -81,10 +85,6 @@ h1 {
     margin-left: 5px;
     border-radius: 1px;
     cursor: pointer;
-}
-
-.btn-search:hover {
-    color: rgba(243, 243, 243, 0.9);
 }
 
 .event-container {
