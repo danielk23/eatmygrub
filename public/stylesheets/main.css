@@ -69,7 +69,7 @@ h1 {
 }
 
 .btn-homepage:hover {
-    color: rgba(218, 218, 218, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .search-container {
@@ -79,12 +79,14 @@ h1 {
 
 .search-input {
     width: 400px;
+    opacity: 0.8;
 }
 
 .btn-search {
     margin-left: 5px;
     border-radius: 1px;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .event-container {
