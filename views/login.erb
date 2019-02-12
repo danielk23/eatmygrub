@@ -1,12 +1,54 @@
-<h2>login</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eat My Grub</title>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/reset.css'>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+</head>
+<body class="body-homepage">
+    <div class="wrapper">
+        <header class="header-homepage">
 
-<form action="/session" method="post">
-<label for="">email</label>
-<input name="email" type="text">
+            
+            <img class="symbol" src="/img/symbol_hp.svg" alt="eat-my-grub-logo-symbol" href="/">
+            
 
-<label for="">password</label>
-<input name="password" type="password">
+            <nav class="nav-homepage">
+            <a class="btn-homepage" href="/">home</a>
+            <a class="btn-homepage" href="/events">all events</a>
+            <a class="btn-homepage" href="/my_events">my events</a>
+            <a class="btn-homepage" href="/my_reserved_events">my rsvp</a>
+            </nav>    
+        </header>
+        <main>
+            <h2>Login</h2>
 
-<button>login</button>
+            <p class="welcome-intro-copy">Please login with your email address and password. If you do not have and account.<a class="btn-homepage" href="/sign_up">Sign up</a>now.</p>
+            
+            <div class="input-container">
+                <form action="/session" method="post">
+                    <label for="">email</label>
+                    <input class="input-small" name="email" type="text">
 
-</form>
+                    <label class="label-right" for="">password</label>
+                    <input class="input-small" name="password" type="password">
+
+                    <button class="btn-login">login</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer-homepage">&copy 2019 - Eat my grub</p> 
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,22 +1,60 @@
-<h2>Sign up</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eat My Grub</title>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/reset.css'>
+  <link rel='stylesheet' type="text/css" href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+</head>
+<body class="body-homepage">
+    <div class="wrapper">
+        <header class="header-homepage">
+            
+            <img class="symbol" src="/img/symbol_hp.svg" alt="eat-my-grub-logo-symbol" href="/">
+         
+            <nav class="nav-homepage">
+                <a class="btn-homepage" href="/">home</a>
+                <a class="btn-homepage" href="/events">all events</a>
+                <a class="btn-homepage" href="/my_events">my events</a>
+                <a class="btn-homepage" href="/my_reserved_events">my rsvp</a>
+            </nav>    
+        </header>
+        <main>
+            <h2>Sign up</h2>
+
+            <p class="welcome-intro-copy">Please enter your details to start enjoying all the benefits of joining the "Eat my Grub" community.</p>
+            
+            <div class="input-container">
+                <form class="form-container" action="/sign_up" method="post">
+                    <label for="">username</label>
+                    <input class="input-sign-up" name="username" type="text">
+
+                    <label for="">first name</label>
+                    <input class="input-sign-up" name="first_name" type="text">
+
+                    <label for="">last name</label>
+                    <input class="input-sign-up" name="last_name" type="text">
+
+                    <label for="">email</label>
+                    <input class="input-sign-up" name="email" type="text">
+
+                    <label for="">password</label>
+                    <input class="input-sign-up" name="password" type="password">
+
+                    <button class="btn-sign-up">Sign up</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer-homepage">&copy 2019 - Eat my grub</p> 
+        </footer>
+    </div>
+</body>
+</html>
 
 
-<form action="/sign_up" method="post">
-<label for="">username</label>
-<input name="username" type="text">
 
-<label for="">first name</label>
-<input name="first_name" type="text">
 
-<label for="">last name</label>
-<input name="last_name" type="text">
 
-<label for="">email</label>
-<input name="email" type="text">
-
-<label for="">password</label>
-<input name="password" type="password">
-
-<button>Sign up</button>
-
-</form>

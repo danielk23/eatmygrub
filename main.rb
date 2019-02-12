@@ -40,7 +40,7 @@ end
 ## USERS ##
 
 get '/sign_up' do
-  erb :sign_up
+  erb :sign_up, {layout: false}
 end
 
 post '/sign_up' do
@@ -56,7 +56,7 @@ end
 
 
 get '/login' do
-  erb :login
+  erb :login, {layout: false}
 end
 
 post '/session' do
